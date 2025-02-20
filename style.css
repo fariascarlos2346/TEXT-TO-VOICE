@@ -19,4 +19,84 @@ main {
     color: #fff;
     text-align: center;
     gap: 20px;
+
+    h1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    span {
+        color: #e42e2e;
+    }
+
+    p {
+        font-size: 23px;
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    width: 75%;
+
+    textarea {
+        width: 75%;
+        height: 125px;
+        border: none;
+        border-radius: 13px;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 23px;
+        padding: 10px 0 0 10px; 
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin-top: 5%;
+
+        .action-box {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            min-width: 200px;
+        }
+    }
+    #voice,
+    #label-file,
+    button {
+        font-size: 23px;
+        padding: 10px 15px;
+        background-color: transparent;
+        border: 1px solid #757575;
+        color: #767676;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    #voice {
+        width: 100%;
+    }
+
+    #voice:hover {
+        color: #000;
+        border: 1px solid #fff;
+    }
+
+    button:hover,
+    #label-file:hover {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
 }
