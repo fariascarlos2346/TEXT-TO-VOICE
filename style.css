@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kanit", serif;
 }
 
 main {
@@ -64,13 +65,23 @@ main {
         width: 70%;
         margin-top: 5%;
 
+        .box1 {
+            margin-right: 33px;
+        }
+
         .action-box {
             display: flex;
             flex-direction: column;
             gap: 30px;
             min-width: 200px;
         }
+
+        .last-btn {
+            display: flex;
+            gap: 23px;
+        }
     }
+
     #voice,
     #label-file,
     button {
