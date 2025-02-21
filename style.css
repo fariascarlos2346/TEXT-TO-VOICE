@@ -109,5 +109,73 @@ main {
         color: #fff;
         border: 1px solid #fff;
     }
+}
 
+@media screen and (max-width: 1030px) {
+    
+    main {
+        background-position: right;
+        padding-right: 0%;
+        padding-bottom: 25%
+    }
+
+    #content {
+        width: 99%;
+
+        .actions {
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        textarea {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        #voice,
+        button,
+        #label-file {
+            font-size: 20px;
+            padding: 10px 15px;
+            background-color: #fff;
+            border: 1px solid #767676;
+            color: #767676;
+        }
+
+        #voice:hover,
+        button:hover,
+        #label-file:hover {
+            color: #000;
+            border: 1px solid #000;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    main {
+        padding-bottom: 0%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        background-position: center;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    textarea {
+        width: 90%;
+    }
 }
